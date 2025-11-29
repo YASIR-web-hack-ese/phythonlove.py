@@ -1,0 +1,12 @@
+# Ignore typical files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+node_modules/
+.vscode/
+.DS_Store
+
+# if you don't want to publish your local Python script
+phythonlove.py
