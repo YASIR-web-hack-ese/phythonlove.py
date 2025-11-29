@@ -13,10 +13,26 @@
                 <div class="profile">
                     <img id="profilePhoto" src="profile.jpg" alt="Profile photo" class="profile-photo" onerror="this.style.display='none'">
                     <div class="profile-text">
-                        <h1>✨ Do You Like Me? ✨</h1>
+                        <div class="title-row">
+                            <h1 id="siteTitle">✨ Do You Like Me? ✨</h1>
+                            <button id="themeToggle" class="btn btn-small">🌙</button>
+                        </div>
                         <p class="subtitle">Follow us on Instagram: <a href="https://instagram.com/yasir_sultan" target="_blank">@yasir_sultan</a></p>
+
+                        <div class="bio-row">
+                            <div id="bio" class="bio editable" contenteditable="false">Hi — I love coding, sports and poetry.</div>
+                            <button id="editBioBtn" class="btn btn-small">Edit bio</button>
+                        </div>
+
+                        <div class="socials-row">
+                            <div id="socials" class="socials editable" contenteditable="false">Instagram: @yasir_sultan</div>
+                            <button id="editSocialsBtn" class="btn btn-small">Edit socials</button>
+                        </div>
+
                         <div class="photo-actions">
                             <button id="changePicBtn" class="btn btn-small">Change photo</button>
+                            <button id="removePicBtn" class="btn btn-small">Remove photo</button>
+                            <button id="downloadPicBtn" class="btn btn-small">Download photo</button>
                         </div>
                     </div>
                 </div>
@@ -44,12 +60,12 @@
                 </div>
                 <div class="hobbies">
                     <h3>About Me — Hobbies</h3>
+                    <div class="hobby-controls">
+                        <input id="newHobbyInput" type="text" placeholder="Add a hobby (e.g. Coding)" />
+                        <button id="addHobbyBtn" class="btn btn-small">Add</button>
+                    </div>
                     <div class="hobby-list" id="hobbyList">
-                        <div class="hobby">💻 Coding</div>
-                        <div class="hobby">⚽ Football</div>
-                        <div class="hobby">🏏 Cricket</div>
-                        <div class="hobby">✍️ Poetry</div>
-                        <div class="hobby">🎵 Music</div>
+                        <!-- hobbies rendered here; items are draggable -->
                     </div>
                 </div>
             </div>

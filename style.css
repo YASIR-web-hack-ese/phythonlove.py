@@ -87,6 +87,97 @@ body {
     transform: translateY(-2px);
 }
 
+.title-row {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.bio-row, .socials-row {
+    display:flex;
+    gap:10px;
+    align-items:center;
+    justify-content:center;
+    margin-top:10px;
+}
+
+.bio, .socials {
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+}
+
+.bio[contenteditable="true"], .socials[contenteditable="true"] {
+    outline: 2px dashed rgba(102,126,234,0.25);
+}
+
+.hobby-controls {
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    margin-bottom:8px;
+}
+
+.hobby-list {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hobby {
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    font-weight: 600;
+    color: #444;
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+.hobby .remove-hobby {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.hobby.dragging {
+    opacity: 0.6;
+    transform: scale(0.98);
+}
+
+.hobby-list.drag-over {
+    outline: 2px dashed rgba(118,75,162,0.3);
+    padding: 6px;
+    border-radius: 8px;
+}
+
+/* Dark theme */
+.dark body, .dark .card {
+    background: #0f1724;
+    color: #e6eef8;
+}
+
+.dark .card {
+    background: #071026;
+}
+
+.dark .profile-text h1, .dark .subtitle, .dark .bio, .dark .socials, .dark .hobby {
+    color: #e6eef8;
+}
+
+.dark .poetry {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.03);
+}
+
 .subtitle {
     color: #666;
     font-size: 14px;
