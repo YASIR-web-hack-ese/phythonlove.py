@@ -69,6 +69,24 @@ body {
     margin: 0;
 }
 
+.photo-actions {
+    margin-top: 10px;
+}
+
+.btn-small {
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.06);
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.btn-small:hover {
+    transform: translateY(-2px);
+}
+
 .subtitle {
     color: #666;
     font-size: 14px;

@@ -11,12 +11,17 @@
         <div class="card">
             <div class="header">
                 <div class="profile">
-                    <img src="profile.jpg" alt="Profile photo" class="profile-photo" onerror="this.style.display='none'">
+                    <img id="profilePhoto" src="profile.jpg" alt="Profile photo" class="profile-photo" onerror="this.style.display='none'">
                     <div class="profile-text">
                         <h1>✨ Do You Like Me? ✨</h1>
                         <p class="subtitle">Follow us on Instagram: <a href="https://instagram.com/yasir_sultan" target="_blank">@yasir_sultan</a></p>
+                        <div class="photo-actions">
+                            <button id="changePicBtn" class="btn btn-small">Change photo</button>
+                        </div>
                     </div>
                 </div>
+                <!-- hidden file input used to pick a profile image -->
+                <input id="fileInput" type="file" accept="image/*" style="display:none">
             </div>
             
             <div class="question-section">
@@ -39,11 +44,12 @@
                 </div>
                 <div class="hobbies">
                     <h3>About Me — Hobbies</h3>
-                    <div class="hobby-list">
-                        <div class="hobby">📚 Reading</div>
-                        <div class="hobby">🎵 Music</div>
-                        <div class="hobby">✍️ Writing Poetry</div>
+                    <div class="hobby-list" id="hobbyList">
                         <div class="hobby">💻 Coding</div>
+                        <div class="hobby">⚽ Football</div>
+                        <div class="hobby">🏏 Cricket</div>
+                        <div class="hobby">✍️ Poetry</div>
+                        <div class="hobby">🎵 Music</div>
                     </div>
                 </div>
             </div>
